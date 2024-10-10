@@ -7,14 +7,22 @@ public class App
     public static void main( String[] args ) {
 
         Scanner scanner = new Scanner(System.in);
-        int i = 0;
+        int i = 1;
+        int fac = 1;
+
+        System.out.println("Give a number:");
 
         int UserInput = Integer.valueOf(scanner.nextLine());
 
-    while (UserInput <= 100){
-        System.out.println(UserInput);
-    UserInput++;
-    }
+        for(i = 1; i <= UserInput;i++){
+            fac = fac * i;
+        }
+        System.out.println("Factorial:" + "" + fac);
+
+
+
+   
+    
 
 
 
