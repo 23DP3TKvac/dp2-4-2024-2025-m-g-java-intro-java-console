@@ -6,28 +6,20 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("How many times?");
+        divisibleByThreeInRange(3, 12);
 
-        int num = 0;
+       
         
-        int UserInput = Integer.valueOf(scanner.nextLine());
-        
-        for(num = 0; num < UserInput; num++){
-            printText();
-        
-        }
-        
+
     }
-
-    
+    public static void divisibleByThreeInRange(int begining, int end) {
         
-public static void printText() {
-    System.out.println("In a hole in the ground there lived a method");
-            
-    
-}
+        for (int i = begining; i<= end; i++ ) {
+            if (i % 3 == 0){
+                System.out.println(i);
+            }
+    }
+    }
     
 }      
 
